@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost/API_development');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/your-app-name');
 
 
 const db=mongoose.connection;
