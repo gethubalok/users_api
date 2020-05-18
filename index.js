@@ -1,5 +1,5 @@
 const express=require('express');
-const port=8080; 
+const port = process.env.PORT || 3000;
 const app=express();
 const db=require('./config/mongoose');
 app.use(express.static('./assests'));
